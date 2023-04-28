@@ -1,0 +1,84 @@
+@use "variables.scss" as v;
+
+.navbar{
+    border-bottom: 3px solid v.$primary-color;
+
+    .navbar-toggler {
+        border: 3px solid v.$primary-color;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        span {
+            display: block;
+            background-color: v.$primary-color;
+            height: 3px;
+            width: 50%;
+        }
+    }
+
+    .navbar-collapse{
+        margin-top: 25px;
+    }
+
+    .nav-link{
+        background-color: v.$primary-color;
+        text-align: center;
+        color: #fff;
+        border-top: 3px solid darken(v.$primary-color, 5);
+        font-weight: 700;
+    }
+
+    .nav-item:first-child .nav-link{
+        border-top: none;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .nav-item:last-child .nav-link{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .nav-link.active{
+        background-color: darken(v.$primary-color, 5);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar{
+        .container{
+            flex-direction: column;
+        }
+
+        .navbar-toggler {
+            display: none;
+        }
+
+        .nav-link{
+            border-top: 3px solid darken(v.$primary-color, 5);
+            border-bottom: 3px solid darken(v.$primary-color, 5);
+            width: 150px;
+        }
+
+        .nav-item:first-child .nav-link{
+            border-top-right-radius: 0px;
+            border-top-left-radius: 25px;            
+            border-bottom-left-radius: 25px;
+            border-top: 3px solid darken(v.$primary-color, 5);
+            border-left: 3px solid darken(v.$primary-color, 5);            
+        }
+    
+        .nav-item:last-child .nav-link{
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-right: 3px solid darken(v.$primary-color, 5);
+        }
+    }
+}
