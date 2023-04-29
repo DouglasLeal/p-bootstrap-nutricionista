@@ -1,8 +1,6 @@
 @use "variables.scss" as v;
 
 .navbar{
-    border-bottom: 3px solid v.$primary-color;
-
     .navbar-toggler {
         border: 3px solid v.$primary-color;
         width: 50px;
@@ -32,6 +30,11 @@
         color: #fff;
         border-top: 3px solid darken(v.$primary-color, 5);
         font-weight: 700;
+        transition: background-color .5s;
+
+        &:hover{
+            background-color: v.$secondary-color;
+        }
     }
 
     .nav-item:first-child .nav-link{
@@ -47,7 +50,7 @@
 
     .nav-link.active{
         color: #fff;
-        background-color: darken(v.$primary-color, 5);
+        background-color: v.$secondary-color;
     }
 }
 

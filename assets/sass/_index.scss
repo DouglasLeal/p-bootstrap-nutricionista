@@ -7,6 +7,8 @@
         background: linear-gradient(180deg, rgba(v.$primary-color, .5), rgba(v.$primary-color, .9)), url('../img/banner.jpg');
         background-position: center;
         background-size: cover;
+        border-top: 5px solid v.$secondary-color;
+        border-bottom: 5px solid v.$secondary-color;
 
         .container {
             height: 100%;
