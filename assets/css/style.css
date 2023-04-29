@@ -38,6 +38,7 @@
   border-bottom-right-radius: 25px;
 }
 .navbar .nav-link.active {
+  color: #fff;
   background-color: #5e9e45;
 }
 
@@ -65,6 +66,34 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-right: 3px solid #5e9e45;
+  }
+}
+.index .banner {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(104, 176, 77, 0.5), rgba(104, 176, 77, 0.9)), url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.index .banner .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .banner h1 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .index .banner {
+    height: 500px;
+    background-attachment: fixed;
+  }
+  .index .banner h1 {
+    max-width: 1920px;
   }
 }
 footer {

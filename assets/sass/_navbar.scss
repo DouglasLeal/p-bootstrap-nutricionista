@@ -46,6 +46,7 @@
     }
 
     .nav-link.active{
+        color: #fff;
         background-color: darken(v.$primary-color, 5);
     }
 }
