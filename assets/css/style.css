@@ -1,3 +1,50 @@
+.secao {
+  padding: 75px 0;
+}
+
+.secao-titulo {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  color: #005A31;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.secao-titulo::after, .secao-titulo::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 30%;
+  height: 3px;
+  border-radius: 25px;
+  background-color: #FF6B18;
+  position: absolute;
+  top: 50%;
+}
+.secao-titulo::before {
+  right: 0;
+}
+
+.btn-primary {
+  background-color: #FF6B18;
+  border-color: #fe5b00;
+  font-weight: 700;
+  color: #005A31;
+}
+.btn-primary:hover {
+  background-color: #FF6B18;
+  border-color: #fe5b00;
+}
+.btn-primary:active {
+  background-color: #fe5b00 !important;
+  border-color: #fe5b00 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .secao-titulo::after, .secao-titulo::before {
+    width: 40%;
+  }
+}
 .navbar .navbar-toggler {
   border: 3px solid #005A31;
   width: 50px;
@@ -88,6 +135,36 @@
   color: #fff;
   font-weight: 700;
   text-align: center;
+}
+.index .servicos .col-12.col-lg-4 {
+  display: flex;
+}
+.index .servicos .servico-item {
+  display: flex;
+}
+.index .servicos .servico-item .card {
+  background-color: #005A31;
+  display: flex;
+}
+.index .servicos .servico-item .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.index .servicos .servico-item .servico-titulo {
+  text-align: center;
+  color: #FF6B18;
+}
+.index .servicos .servico-item .servico-texto {
+  display: flex;
+  color: #fff;
+  height: 100%;
+  font-weight: 500;
+  text-align: center;
+}
+.index .servicos .servico-item .btn-primary {
+  margin: 0 auto;
+  display: block;
+  width: 125px;
 }
 
 @media screen and (min-width: 992px) {

@@ -1,0 +1,55 @@
+@use "variables.scss" as v;
+
+.secao{
+    padding: 75px 0;
+}
+
+.secao-titulo{
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: v.$primary-color;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    &::after, &::before{
+        content: '';
+        display: block;
+        position: relative;
+        width: 30%;
+        height: 3px;
+        border-radius: 25px;
+        background-color: v.$secondary-color;
+        position: absolute;
+        top: 50%;
+    }
+
+    &::before{
+        right: 0;
+    }
+}
+
+.btn-primary{
+    background-color: v.$secondary-color;
+    border-color: darken(v.$secondary-color, 5%);
+    font-weight: 700;
+    color: v.$primary-color;
+
+    &:hover{
+        background-color: v.$secondary-color;
+        border-color: darken(v.$secondary-color, 5%);
+    }
+
+    &:active{
+        background-color: darken(v.$secondary-color, 5%) !important;
+        border-color: darken(v.$secondary-color, 5%) !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .secao-titulo{
+        &::after, &::before{
+            width: 40%;
+        }        
+    }
+}
