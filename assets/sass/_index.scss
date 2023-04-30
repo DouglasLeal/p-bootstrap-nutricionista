@@ -24,6 +24,14 @@
         }
     }
 
+    .sobre{
+        background-color: v.$secondary-color;
+        p{
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+
     .servicos{
         .col-12.col-lg-4{
             display: flex;

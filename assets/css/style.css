@@ -136,6 +136,13 @@
   font-weight: 700;
   text-align: center;
 }
+.index .sobre {
+  background-color: #FF6B18;
+}
+.index .sobre p {
+  font-weight: 500;
+  color: #fff;
+}
 .index .servicos .col-12.col-lg-4 {
   display: flex;
 }
