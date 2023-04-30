@@ -173,6 +173,18 @@
   display: block;
   width: 125px;
 }
+.index .contato .contato-item {
+  margin-bottom: 25px;
+}
+.index .contato .contato-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #005A31;
+  font-weight: 500;
+}
+.index .contato .contato-item a:hover {
+  text-decoration: underline 3px #FF6B18;
+}
 
 @media screen and (min-width: 992px) {
   .index .banner {
