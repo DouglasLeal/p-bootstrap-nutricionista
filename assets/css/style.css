@@ -122,7 +122,7 @@
     border-right: 3px solid #004123;
   }
 }
-.index .banner {
+main.index .banner {
   width: 100%;
   height: 250px;
   background: linear-gradient(180deg, rgba(0, 90, 49, 0.5), rgba(0, 90, 49, 0.9)), url("../img/banner.jpg");
@@ -131,64 +131,64 @@
   border-top: 5px solid #FF6B18;
   border-bottom: 5px solid #FF6B18;
 }
-.index .banner .container {
+main.index .banner .container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.index .banner h1 {
+main.index .banner h1 {
   color: #fff;
   font-weight: 700;
   text-align: center;
 }
-.index .sobre {
+main.index .sobre {
   background-color: #FF6B18;
 }
-.index .sobre p {
+main.index .sobre p {
   font-weight: 500;
   color: #fff;
 }
-.index .servicos .col-12.col-lg-4 {
+main.index .servicos .col-12.col-lg-4 {
   display: flex;
 }
-.index .servicos .servico-item {
+main.index .servicos .servico-item {
   display: flex;
 }
-.index .servicos .servico-item .card {
+main.index .servicos .servico-item .card {
   background-color: #005A31;
   display: flex;
 }
-.index .servicos .servico-item .card-body {
+main.index .servicos .servico-item .card-body {
   display: flex;
   flex-direction: column;
 }
-.index .servicos .servico-item .servico-titulo {
+main.index .servicos .servico-item .servico-titulo {
   text-align: center;
   color: #FF6B18;
 }
-.index .servicos .servico-item .servico-texto {
+main.index .servicos .servico-item .servico-texto {
   display: flex;
   color: #fff;
   height: 100%;
   font-weight: 500;
   text-align: center;
 }
-.index .servicos .servico-item .btn-primary {
+main.index .servicos .servico-item .btn-primary {
   margin: 0 auto;
   display: block;
   width: 125px;
 }
-.index .contato .contato-item {
+main.index .contato .contato-item {
   margin-bottom: 25px;
 }
-.index .contato .contato-item a {
+main.index .contato .contato-item a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #005A31;
   font-weight: 500;
 }
-.index .contato .contato-item a:hover {
+main.index .contato .contato-item a:hover {
   text-decoration: underline 3px #FF6B18;
 }
 
@@ -201,6 +201,42 @@
     max-width: 1920px;
   }
 }
+main.contato .contato-item {
+  margin-bottom: 25px;
+}
+main.contato .contato-item a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #005A31;
+  font-weight: 500;
+}
+main.contato .contato-item a:hover {
+  text-decoration: underline 3px #FF6B18;
+}
+main.contato form .form-control {
+  border: 1px solid #005A31;
+}
+main.contato form .form-control:focus {
+  box-shadow: 0px 0px 3px 1px #FF6B18;
+}
+main.contato form .btn-outline-primary {
+  border: 3px solid #FF6B18;
+  color: #005A31;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto;
+  display: block;
+  width: 125px;
+}
+main.contato form .btn-outline-primary:hover {
+  background-color: #FF6B18;
+  color: #fff;
+}
+main.contato form .btn-outline-primary:active {
+  background-color: #e45200;
+  border: 3px solid #005A31;
+}
+
 footer {
   background-color: #005A31;
   padding: 25px 0;
