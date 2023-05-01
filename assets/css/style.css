@@ -204,6 +204,10 @@ main.index .contato .contato-item a:hover {
     max-width: 1920px;
   }
 }
+main.sobre p {
+  font-weight: 500;
+}
+
 main.servicos .servico-item h3 {
   color: #FF6B18;
   padding-bottom: 5px;
