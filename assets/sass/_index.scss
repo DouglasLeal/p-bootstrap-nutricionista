@@ -7,7 +7,6 @@ main.index {
         background: linear-gradient(180deg, rgba(v.$primary-color, .5), rgba(v.$primary-color, .9)), url('../img/banner.jpg');
         background-position: center;
         background-size: cover;
-        border-top: 5px solid v.$secondary-color;
         border-bottom: 5px solid v.$secondary-color;
 
         .container {
@@ -90,7 +89,7 @@ main.index {
 @media screen and (min-width: 992px) {
     .index {
         .banner {
-            height: 500px;
+            height: 500px !important;
             background-attachment: fixed;
 
             h1{

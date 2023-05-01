@@ -45,6 +45,10 @@
     width: 40%;
   }
 }
+.navbar {
+  border-bottom: 5px solid #FF6B18;
+  box-shadow: 0 1px 10px 5px rgba(0, 0, 0, 0.25);
+}
 .navbar .navbar-brand img {
   width: 150px;
 }
@@ -128,7 +132,6 @@ main.index .banner {
   background: linear-gradient(180deg, rgba(0, 90, 49, 0.5), rgba(0, 90, 49, 0.9)), url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
-  border-top: 5px solid #FF6B18;
   border-bottom: 5px solid #FF6B18;
 }
 main.index .banner .container {
@@ -194,13 +197,25 @@ main.index .contato .contato-item a:hover {
 
 @media screen and (min-width: 992px) {
   .index .banner {
-    height: 500px;
+    height: 500px !important;
     background-attachment: fixed;
   }
   .index .banner h1 {
     max-width: 1920px;
   }
 }
+main.servicos .servico-item h3 {
+  color: #FF6B18;
+  padding-bottom: 5px;
+  border-bottom: 5px dotted #005A31;
+}
+main.servicos .servico-item ul {
+  list-style: none;
+}
+main.servicos .servico-item ul i {
+  color: #FF6B18;
+}
+
 main.contato .contato-item {
   margin-bottom: 25px;
 }

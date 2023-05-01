@@ -1,0 +1,19 @@
+@use "variables.scss" as v;
+
+main.servicos{
+    .servico-item{
+        h3{
+            color: v.$secondary-color;
+            padding-bottom: 5px;
+            border-bottom: 5px dotted v.$primary-color;
+        }
+
+        ul{
+            list-style: none;
+
+            i{
+                color: v.$secondary-color;
+            }
+        }
+    }
+}

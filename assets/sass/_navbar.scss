@@ -1,6 +1,9 @@
 @use "variables.scss" as v;
 
 .navbar{
+    border-bottom: 5px solid v.$secondary-color;
+    box-shadow: 0 1px 10px 5px rgba(#000, .25);
+
     .navbar-brand{
         img{
             width: 150px;
